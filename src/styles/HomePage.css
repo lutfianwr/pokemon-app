@@ -1,0 +1,21 @@
+.Homepage {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .pokemon {
+  flex: 0 0 14.5%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination .active {
+  background-color: aquamarine;
+}
+.pagination p {
+  padding: 0% 10px;
+}
