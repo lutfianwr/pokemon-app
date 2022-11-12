@@ -2,18 +2,24 @@ import React from "react";
 
 const PokemonCard = (props) => {
   const { fetchDetail, name, id } = props;
+
+  const errorHandler = (error) => {
+    const img = document.getElementById("img");
+    img.src = "https://example.com/dummy.jpg";
+  };
+
   return (
     <div className="pokemon" onClick={() => fetchDetail()}>
-      <p>{name}</p>
       <img
         alt={name}
         src={
-          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/poskemon/${id}.png`
+          id
             ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
-            : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
-          // : `https://via.placeholder.com/250x250?text=Image+not+found`
+            : `https://via.placeholder.com/250x250?text=Image+not+found`
         }
       />
+      <p className="id">#{id}</p>
+      <p className="name">{name}</p>
     </div>
   );
 };

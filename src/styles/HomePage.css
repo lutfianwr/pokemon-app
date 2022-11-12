@@ -1,5 +1,27 @@
 .Homepage {
   text-align: center;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Homepage .container .name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.Homepage .search {
+  padding: 5vh 0;
+  background-image: linear-gradient(rgb(60, 181, 202), white);
+}
+.Homepage button {
+  font-family: "Poppins";
+  padding: 5px;
+}
+.Homepage .search input {
+  font-family: "Poppins";
+  width: 25vw;
+  padding: 5px;
 }
 .container {
   display: flex;
@@ -8,14 +30,39 @@
 }
 .container .pokemon {
   flex: 0 0 14.5%;
+  background-color: aliceblue;
+  margin: 2px;
+  padding: 5px;
+}
+.container .pokemon:hover {
+  color: rgb(48, 156, 156);
+  background-color: rgba(60, 181, 202, 0.171);
+}
+
+.container .pokemon img {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+.container .pokemon .id {
+  margin: 0;
+  color: #6b6b6b;
 }
 .pagination {
   display: flex;
   justify-content: center;
+  margin-bottom: 3vh;
 }
 .pagination .active {
-  background-color: aquamarine;
+  background-color: rgb(60, 181, 202);
 }
 .pagination p {
+  border-radius: 5px;
   padding: 0% 10px;
+  cursor: pointer;
+  width: 1em;
+}
+.pagination p:hover {
+  background-color: rgba(60, 181, 202, 0.342);
 }

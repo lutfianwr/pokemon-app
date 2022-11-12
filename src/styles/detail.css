@@ -1,0 +1,120 @@
+.lottie {
+  height: 100vh;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 0 20vw;
+}
+.detail button {
+  position: absolute;
+  padding: 15px;
+  top: 3vh;
+  left: 3vw;
+}
+.detail p {
+  margin-top: 0;
+}
+.detail span {
+  font-weight: bold;
+  font-size: large;
+}
+.detail .left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail .left-content .id {
+  margin-bottom: 0;
+  color: #6b6b6b;
+}
+.detail .left-content .name {
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+.detail img {
+  width: 350px;
+  image-rendering: pixelated;
+  background-color: aliceblue;
+  margin: 5px;
+  border-radius: 5px;
+}
+.detail .types {
+  display: flex;
+}
+.detail .types p {
+  padding: 5px;
+  margin: 0 5px;
+  color: #ffff;
+  border-radius: 5px;
+}
+.detail .types .fairy {
+  background-color: #ee99ee;
+}
+.detail .types .ice {
+  background-color: #66ccff;
+}
+.detail .types .dragon {
+  background-color: #7766ee;
+}
+.detail .types .normal {
+  background-color: #aaaa99;
+}
+.detail .types .rock {
+  background-color: #bbaa66;
+}
+.detail .types .fire {
+  background-color: #ff4422;
+}
+.detail .types .flying {
+  background-color: #8899ff;
+}
+.detail .types .bug {
+  background-color: #aabb22;
+}
+.detail .types .electric {
+  background-color: #ffcc33;
+}
+.detail .types .fighting {
+  background-color: #bb5544;
+}
+.detail .types .psychic {
+  background-color: #ff5599;
+}
+.detail .types .water {
+  background-color: #3399ff;
+}
+.detail .types .steel {
+  background-color: #aaaabb;
+}
+.detail .types .ghost {
+  background-color: #6666bb;
+}
+.detail .types .dark {
+  background-color: #775544;
+}
+.detail .types .poison {
+  background-color: #aa5599;
+}
+.detail .types .grass {
+  background-color: #77cc55;
+}
+.detail .types .ground {
+  background-color: #ddbb55;
+}
+
+.detail .status meter {
+  width: 15em;
+}
+.detail .status p {
+  margin: 0;
+}
+.detail .abilities .ability {
+  display: flex;
+}
+.detail .abilities .ability p {
+  padding-right: 15px;
+}
